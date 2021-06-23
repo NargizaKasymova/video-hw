@@ -12,7 +12,9 @@ app.get('/', (req, res) => {
     res.status(201).json('Server works123')
 })
 
-
+app.post('/post', (req, res) => {
+    console.log(req.body)
+})
 
 app.listen(PORT, function() {
     console.log('App has been satrted ' + PORT)
