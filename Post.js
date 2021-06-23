@@ -6,4 +6,5 @@ const Post = new mongoose.Schema({
     picture:{type: String}
 })
 
-export default mongoose.model('Post', Post)
+exports.mongoose.model('Post', Post)
+// export default mongoose.model('Post', Post)
