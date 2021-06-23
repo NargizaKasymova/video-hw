@@ -46,7 +46,7 @@ async function startApp() {
         console.log(e)
     }
 }
-
+startApp()
 
 // app.listen(PORT, function() {
 //     console.log('App has been satrted ' + PORT)

@@ -17,4 +17,4 @@ router.get('/posts/:id')
 router.put('/posts')
 router.delete('/posts/:id')
 
-export default router
+exports.router = router
