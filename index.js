@@ -1,7 +1,14 @@
-const express = require('express')
+require('dotenv').config()
+const mongoUrl = process.env.mongo_url
+// console.log(mongoUrl)
 
+
+const express = require('express')
+const mongoose = require('mongoose')
 const app = express()
 app.use(express.json())
+
+
 
 const PORT = 5050
 
@@ -14,6 +21,7 @@ app.get('/', (req, res) => {
 
 app.post('/post', (req, res) => {
     console.log(req.body)
+    res.status(200).json('Сервер работает 123')
 })
 
 app.listen(PORT, function() {
